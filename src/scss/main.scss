@@ -1,0 +1,27 @@
+
+/*
+================================================================================
+
+  Import of all SCSS-files
+
+================================================================================
+*/
+
+@charset 'utf-8';
+
+@import 'normalize.css/normalize';
+@import 'swiper/css/swiper';
+
+@import 'utils/variables';
+@import 'utils/mixins/mixins-form';
+@import 'utils/mixins/mixins-grid';
+@import 'utils/mixins/mixins-text';
+@import 'utils/mixins/burger';
+
+@import 'base/breakpoints';
+@import 'base/general';
+
+@import 'components/**/*.scss';
+@import 'layout/**/*.scss';
+@import 'sections/**/*.scss';
+@import 'pages/**/*.scss';

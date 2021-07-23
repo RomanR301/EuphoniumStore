@@ -1,0 +1,128 @@
+
+/*
+================================================================================
+
+  "Button" component
+
+================================================================================
+*/
+
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 4.4rem;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font-size: 1.6rem;
+  line-height: 4.4rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: $default-transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+
+  // An extra element needed for hover animation
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: $default-transition;
+  }
+
+
+  &--blue {
+    color: $white-color;
+    background-image: linear-gradient(to bottom right, $light-blue-color 0%, $blue-color 100%);
+
+    &::before {
+      background-color: $blue-color;
+    }
+
+    &:active {
+      &::before {
+        background-color: $light-blue-color;
+      }
+    }
+  }
+
+  &--grey {
+    color: $white-color;
+    background-image: linear-gradient(to bottom right, #aaa 0%, #555 100%);
+
+    &::before {
+      background-color: #555;
+    }
+
+    &:active {
+      &::before {
+        background-color: #aaa;
+      }
+    }
+  }
+
+  &--black {
+    color: $white-color;
+    background-image: linear-gradient(to bottom right, #6e6e6e 0%, #262626 100%);
+
+    &::before {
+      background-color: #6e6e6e;
+    }
+
+    &:active {
+      &::before {
+        background-color: #262626;
+      }
+    }
+  }
+
+
+  &--ghost {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $grey-color;
+    background-color: $white-color;
+    border: 1px solid $blue-color;
+    line-height: 4.2rem;
+    text-transform: capitalize;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $blue-color;
+
+      > .icon {
+        fill: $white-color;
+      }
+    }
+
+    > .icon {
+      margin-left: 2rem;
+      width: 2.4rem;
+      height: 1.6rem;
+      fill: $grey-color;
+      transition: $default-transition;
+    }
+  }
+}

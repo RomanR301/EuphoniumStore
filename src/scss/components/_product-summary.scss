@@ -1,0 +1,199 @@
+
+/*
+================================================================================
+
+  "Product Summary" component
+
+================================================================================
+*/
+
+.product-summary {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 48rem;
+  background-color: $white-color;
+  box-shadow: 0 0 4rem rgba($black-color, 0.16);
+
+  &__header {
+    @include no-shrink;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: $black-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: (29/24);
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    color: $light-grey-2-color;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: (36/24);
+    text-transform: uppercase;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__article {
+    color: $light-grey-2-color;
+    font-size: 1.4rem;
+    line-height: (18/14);
+    text-transform: uppercase;
+  }
+
+  &__price {
+    color: $grey-color;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: (24/20);
+  }
+
+  &__body {
+    @include no-shrink;
+  }
+
+  &__desc {
+    @include clear-children-margins;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.4rem;
+    line-height: (20/14);
+  }
+
+  &__footer {
+    @include no-shrink;
+    margin-top: auto;
+  }
+
+  &__add-btn {
+    width: 100%;
+    font-weight: 700;
+  }
+}
+
+
+
+/* Color
+------------------------------------- */
+
+.product-summary-color {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid $light-grey-2-color;
+
+  &__title {
+    margin-bottom: 1.2rem;
+    color: $light-grey-2-color;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: (21/18);
+  }
+}
+
+
+
+/* Attributes
+------------------------------------- */
+
+.product-summary-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  list-style-type: none;
+
+  &__item {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    width: calc(50% - #{2rem / 2});
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 1024px
+@include mq($until: mq1024px) {
+  .product-summary {
+    padding-bottom: 0;
+    padding-left: $pad-sm;
+    padding-right: $pad-sm;
+    max-width: none;
+    box-shadow: none;
+  }
+}
+
+
+// Until 480px
+@include mq($until: mq480px) {
+  .product-summary {
+    padding-top: 2rem;
+
+    &__header {
+      margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+// Until 375px
+@include mq($until: mq375px) {
+  .product-summary {
+
+    &__title {
+      font-size: 2.2rem;
+    }
+  }
+
+  .product-summary-attributes {
+    display: block;
+
+    &__item {
+      margin-bottom: 1.5rem;
+      margin-right: 0;
+      width: 100%;
+
+      &:nth-last-child(-n+2) {
+        margin-bottom: 1.5rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

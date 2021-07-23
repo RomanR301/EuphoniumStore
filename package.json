@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development gulp dev",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^2.6.4",
+    "normalize.css": "^8.0.1",
+    "sass-mq": "^5.0.1",
+    "susy": "^3.0.5",
+    "swiper": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-changed": "^4.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-rev-format": "^1.0.4",
+    "gulp-rev-rewrite": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "node-sass": "^4.12.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.05%",
+    "IE 11",
+    "not dead"
+  ]
+}

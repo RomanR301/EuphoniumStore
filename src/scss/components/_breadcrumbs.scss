@@ -1,0 +1,50 @@
+
+/*
+================================================================================
+
+  "Breadcrumbs" component
+
+================================================================================
+*/
+
+.breadcrumbs {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+  list-style-type: none;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    line-height: (20/16);
+
+    &::after {
+      content: '/';
+      padding-left: 0.5rem;
+      padding-right: 0.8rem;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $dark-grey-color;
+    text-decoration: none;
+    transition: $default-transition;
+
+    &:hover {
+      color: $blue-color;
+    }
+
+    &:not([href]) {
+      color: $dark-grey-color !important;
+      cursor: default;
+    }
+  }
+}

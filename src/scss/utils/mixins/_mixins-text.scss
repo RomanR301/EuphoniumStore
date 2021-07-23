@@ -1,0 +1,62 @@
+
+/*
+================================================================================
+
+  Text mixins
+
+================================================================================
+*/
+
+
+
+/* Font smoothing
+------------------------------------- */
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Clears top and bottom margins of
+   the first and last child element
+   respectively
+------------------------------------- */
+
+@mixin clear-children-margins {
+  *:first-child {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/* Section title
+------------------------------------- */
+
+@mixin section-title {
+  color: $grey-color;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: (48/36);
+
+  // Until 768px
+  @include mq($until: mq768px) {
+    font-size: 3.2rem;
+  }
+
+  // Until 568px
+  @include mq($until: mq568px) {
+    font-size: 2.8rem;
+  }
+
+  // Until 375px
+  @include mq($until: mq375px) {
+    font-size: 2.6rem;
+  }
+}

@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Checkout | Prima Vista Musikk</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <!-- SVG Sprites Loading -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open('GET', 'img/sprites.svg', true);
+    ajax.send();
+    ajax.onload = function(e) {
+      var div = document.createElement('div');
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ==========================
+    HEADER
+  =========================== -->
+  <header class="header header--checkout">
+    <div class="header__container">
+      <div class="header__inner-container">
+        <a class="header__logo" href="#" aria-label="Home page">
+          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="" draggable="false">
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================
+    MAIN
+  =========================== -->
+  <main class="main">
+
+    <!-- Checkout -->
+    <section class="checkout">
+      <div class="checkout__container">
+
+        <!-- Header -->
+        <header class="checkout__header">
+          <h1 class="checkout__title">Checkout</h1>
+        </header>
+
+        <!-- Body -->
+        <div class="checkout__body">
+
+          <!-- Content -->
+          <div class="checkout-content">
+            <ul class="steps">
+              <li class="steps__item steps__item--passed">
+                <svg class="icon">
+                  <use xlink:href="#icon-check"></use>
+                </svg>
+                Customer
+              </li>
+              <li class="steps__item steps__item--active">Shipping</li>
+              <li class="steps__item">Billing</li>
+              <li class="steps__item">Payment</li>
+            </ul>
+
+            <div class="checkout-content__container">
+              <div class="checkout-content__notifications">
+                <div class="notification notification--blue">
+                  <div class="notification__container">
+                    <svg class="icon notification__icon">
+                      <use xlink:href="#icon-notification"></use>
+                    </svg>
+
+                    <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                      messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Basic field</label>
+
+                  <input class="field__input" type="text" placeholder="Placeholder">
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Optional field</label>
+
+                  <div class="field__optional">Optional</div>
+
+                  <input class="field__input" type="text" placeholder="Placeholder">
+                </div>
+              </div>
+
+              <div class="checkout-content__row checkout-content__row--2-columns">
+                <div class="checkout-content__column">
+                  <div class="field">
+                    <label class="field__label">Basic field</label>
+
+                    <input class="field__input" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+
+                <div class="checkout-content__column">
+                  <div class="field">
+                    <label class="field__label">Basic field</label>
+
+                    <input class="field__input" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row checkout-content__row--3-columns">
+                <div class="checkout-content__column">
+                  <div class="field">
+                    <label class="field__label">Basic field</label>
+
+                    <input class="field__input" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+
+                <div class="checkout-content__column">
+                  <div class="field">
+                    <label class="field__label">Basic field</label>
+
+                    <input class="field__input" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+
+                <div class="checkout-content__column">
+                  <div class="field">
+                    <label class="field__label">Basic field</label>
+
+                    <input class="field__input" type="text" placeholder="Placeholder">
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Textarea</label>
+
+                  <textarea class="field__input field__input--textarea" placeholder="Placeholder"></textarea>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Select</label>
+
+                  <div class="field__select-wrapper">
+                    <svg class="icon field__select-arrow">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select class="field__select">
+                      <option value="1" selected>Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                      <option value="5">Option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <button class="btn btn--blue" type="button">Button 1</button>
+              </div>
+
+              <div class="checkout-content__row">
+                <button class="btn btn--black" type="button">Button 2</button>
+              </div>
+
+              <div class="checkout-content__row">
+                <button class="btn btn--grey" type="button">Button 3</button>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Checkboxes</label>
+
+                  <div class="field__checkboxes">
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="checkbox-1" type="checkbox">
+                      <label class="checkbox__label" for="checkbox-1">Checkbox 1</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="checkbox-2" type="checkbox">
+                      <label class="checkbox__label" for="checkbox-2">Checkbox 2</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="checkbox-3" type="checkbox" checked>
+                      <label class="checkbox__label" for="checkbox-3">Checkbox 3</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="field">
+                  <label class="field__label">Radios</label>
+
+                  <div class="field__checkboxes">
+                    <div class="radio">
+                      <input class="radio__input" id="radio-1" name="radio" type="radio">
+                      <label class="radio__label" for="radio-1">Radio 1</label>
+                    </div>
+
+                    <div class="radio">
+                      <input class="radio__input" id="radio-2" name="radio" type="radio">
+                      <label class="radio__label" for="radio-2">Radio 2</label>
+                    </div>
+
+                    <div class="radio">
+                      <input class="radio__input" id="radio-3" name="radio" type="radio" checked>
+                      <label class="radio__label" for="radio-3">Radio 3</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-content__row">
+                <div class="checkout-method">
+                  <div class="checkout-method__header">Method selection</div>
+
+                  <div class="checkout-method__container">
+                    <div class="checkout-method__item">
+                      <input class="checkout-method__input" id="method-1" name="method" type="radio">
+                      <label class="checkout-method__label" for="method-1">
+                        <span class="checkout-method__title">Method title</span>
+
+                        <span class="checkout-method__price">&pound;9.95</span>
+                      </label>
+                    </div>
+
+                    <div class="checkout-method__item">
+                      <input class="checkout-method__input" id="method-2" name="method" type="radio">
+                      <label class="checkout-method__label" for="method-2">
+                        <span class="checkout-method__title">Method title</span>
+
+                        <span class="checkout-method__price">&pound;9.95</span>
+                      </label>
+                    </div>
+
+                    <div class="checkout-method__item">
+                      <input class="checkout-method__input" id="method-3" name="method" type="radio" checked>
+                      <label class="checkout-method__label" for="method-3">
+                        <span class="checkout-method__title">Method title</span>
+
+                        <span class="checkout-method__price">&pound;9.95</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="checkout-sidebar">
+            <header class="checkout-sidebar__header">
+              <div class="checkout-sidebar__title">Shopping Cart Summary</div>
+
+              <div class="checkout-sidebar__items">5 items</div>
+            </header>
+
+            <div class="checkout-sidebar__body">
+              <div class="cart-item">
+                <div class="cart-item__photo">
+                  <img src="pic/components/cart-item/cart-item.png"
+                    srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+                </div>
+
+                <div class="cart-item__content">
+                  <div class="cart-item__left-part">
+                    <div class="cart-item__title">Upon the celtic cross</div>
+
+                    <div class="cart-item__author">Jonathan Bates</div>
+
+                    <ul class="cart-item__attrs">
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                    </ul>
+                  </div>
+
+                  <div class="cart-item__right-part">
+                    <div class="cart-item__price">&pound;64.95</div>
+
+                    <div class="cart-item__quantity">
+                      <svg class="icon">
+                        <use xlink:href="#icon-chevron-down"></use>
+                      </svg>
+
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <button class="cart-item__remove-btn" type="button">Remove</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item__photo">
+                  <img src="pic/components/cart-item/cart-item.png"
+                    srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+                </div>
+
+                <div class="cart-item__content">
+                  <div class="cart-item__left-part">
+                    <div class="cart-item__title">Upon the celtic cross</div>
+
+                    <div class="cart-item__author">Jonathan Bates</div>
+
+                    <ul class="cart-item__attrs">
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                    </ul>
+                  </div>
+
+                  <div class="cart-item__right-part">
+                    <div class="cart-item__price">&pound;64.95</div>
+
+                    <div class="cart-item__quantity">
+                      <svg class="icon">
+                        <use xlink:href="#icon-chevron-down"></use>
+                      </svg>
+
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <button class="cart-item__remove-btn" type="button">Remove</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item__photo">
+                  <img src="pic/components/cart-item/cart-item.png"
+                    srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+                </div>
+
+                <div class="cart-item__content">
+                  <div class="cart-item__left-part">
+                    <div class="cart-item__title">Upon the celtic cross</div>
+
+                    <div class="cart-item__author">Jonathan Bates</div>
+
+                    <ul class="cart-item__attrs">
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                    </ul>
+                  </div>
+
+                  <div class="cart-item__right-part">
+                    <div class="cart-item__price">&pound;64.95</div>
+
+                    <div class="cart-item__quantity">
+                      <svg class="icon">
+                        <use xlink:href="#icon-chevron-down"></use>
+                      </svg>
+
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <button class="cart-item__remove-btn" type="button">Remove</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="cart-item__photo">
+                  <img src="pic/components/cart-item/cart-item.png"
+                    srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+                </div>
+
+                <div class="cart-item__content">
+                  <div class="cart-item__left-part">
+                    <div class="cart-item__title">Upon the celtic cross</div>
+
+                    <div class="cart-item__author">Jonathan Bates</div>
+
+                    <ul class="cart-item__attrs">
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                      <li>Optional extra attribute</li>
+                    </ul>
+                  </div>
+
+                  <div class="cart-item__right-part">
+                    <div class="cart-item__price">&pound;64.95</div>
+
+                    <div class="cart-item__quantity">
+                      <svg class="icon">
+                        <use xlink:href="#icon-chevron-down"></use>
+                      </svg>
+
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+
+                    <button class="cart-item__remove-btn" type="button">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="checkout-sidebar__footer">
+              <table class="checkout-sidebar__table">
+                <tbody>
+                  <tr>
+                    <th>Shipping</th>
+                    <td><span class="currency-sign">&pound;</span> 9.95</td>
+                  </tr>
+
+                  <tr>
+                    <th>Discount</th>
+                    <td><span class="currency-sign">-&pound;</span> 19.95</td>
+                  </tr>
+
+                  <tr>
+                    <th>Subtotal</th>
+                    <td><span class="currency-sign">&pound;</span> 129.95</td>
+                  </tr>
+
+                  <tr>
+                    <th><strong>Total</strong></th>
+                    <td><strong><span class="currency-sign">&pound;</span> 129.95</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </footer>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================
+    FOOTER
+  =========================== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+
+        <!-- Catalogue -->
+        <div class="footer-section">
+          <div class="footer-section__title">Catalogue</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">CD's</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">The Leading Edge</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Wind Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Fanfare Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos/Duets/Trios</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass or Wind Band Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos with Piano Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Eminence Brass Quartet Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">David Childs Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Roger Webster Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Owen Farr Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Books</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- My account -->
+        <div class="footer-section">
+          <div class="footer-section__title">My account</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Account</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Cart</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Checkout</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Register</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Artists -->
+        <div class="footer-section">
+          <div class="footer-section__title">Artists</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Ford</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Wainwright</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Anthony Ritchie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Barry Forgie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Ben Hollings</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">More&hellip;</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Information -->
+        <div class="footer-section">
+          <div class="footer-section__title">Information</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Specials</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Sitemap</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Customer Service</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Download</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-section">
+          <div class="footer-section__title">Legal</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Terms & Conditions</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Privacy Policy</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Built by GK Creative</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <div class="newsletter__title">Newsletter</div>
+
+          <div class="newsletter__desc">
+            <p>Stay up to date on all things Prima Vista Musikk.</p>
+          </div>
+
+          <form class="newsletter__form" action="#" method="post">
+            <input class="newsletter__input" name="email" type="email" placeholder="Enter your email">
+
+            <button class="newsletter__submit-btn" type="submit">
+              <svg class="icon">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="newsletter__notice">
+            <p>By submitting this form, you agree to the Terms of Use and Privacy of this website.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="https://polyfill.io/v3/polyfill.min.js" crossorigin="anonymous"></script>
+  <script src="js/runtime.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+
+</body>
+</html>

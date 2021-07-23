@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Cart | Prima Vista Musikk</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <!-- SVG Sprites Loading -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open('GET', 'img/sprites.svg', true);
+    ajax.send();
+    ajax.onload = function(e) {
+      var div = document.createElement('div');
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ==========================
+    HEADER
+  =========================== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__inner-container">
+        <a class="header__logo" href="#" aria-label="Home page">
+          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="" draggable="false">
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__container">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">News</a>
+            </li>
+
+            <li class="nav__item nav__item--dropdown">
+              <div class="nav__link nav__link--dropdown">
+                Catalogue
+                <svg class="icon nav__icon">
+                  <use xlink:href="#icon-chevron-down"></use>
+                </svg>
+              </div>
+
+              <div class="nav-dropdown">
+                <div class="nav-dropdown__container">
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">By series</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">CD's</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">The Leading Edge</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Brass Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Wind Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Fanfare Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Solos/Duets/Trios</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Brass or Wind Band Accompaniment</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Solos with Piano Accompaniment</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Eminence Brass Quartet Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">David Childs Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Roger Webster Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Owen Farr Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Books</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">By artist</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Andrew Ford</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Andrew Wainwright</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Anthony Ritchie</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Barry Forgie</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Ben Hollings</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Benjamin Tubb</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Bert Van Thienen</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Cai Isfryn</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Christian Jenkins</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Christian Overhead</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Dan Price</a>
+                      </li>
+                    </ul>
+
+                    <a class="nav-dropdown__btn" href="#">More artists</a>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">Other</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 1</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 2</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 3</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">Other 2</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 1</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 2</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 3</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 4</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 5</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Artists</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Downloads</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="header__hamburger-btn" type="button" aria-label="Navigation">
+            <svg class="icon">
+              <use xlink:href="#icon-hamburger"></use>
+            </svg>
+          </button>
+
+          <button class="header__search-btn" type="button" aria-label="Search">
+            <svg class="icon">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+
+          <a class="header__profile-btn" href="#" aria-label="Profile">
+            <svg class="icon">
+              <use xlink:href="#icon-profile"></use>
+            </svg>
+          </a>
+
+          <button class="header__cart-btn" type="button" aria-label="Cart">
+            <svg class="icon">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-dropdown">
+        <div class="search-dropdown__container">
+          <form class="search-dropdown__form" action="#" method="post" autocomplete="off">
+            <input class="search-dropdown__input" name="search" type="search" placeholder="What are you looking for…">
+
+            <button class="search-dropdown__clear-btn" type="reset">
+              <svg class="icon">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </form>
+
+          <ul class="search-dropdown__list">
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, sunt?</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================
+    MAIN
+  =========================== -->
+  <main class="main">
+
+    <!-- Cart -->
+    <section class="cart">
+      <div class="cart__container">
+
+        <!-- Header -->
+        <header class="cart__header">
+          <ul class="breadcrumbs cart__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Home</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Shop</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <div class="breadcrumbs__link">Cart</div>
+            </li>
+          </ul>
+
+          <h1 class="cart__title">Shopping Cart</h1>
+
+          <div class="cart__notifications">
+            <div class="notification notification--blue">
+              <div class="notification__container">
+                <svg class="icon notification__icon">
+                  <use xlink:href="#icon-notification"></use>
+                </svg>
+
+                <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                  messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+              </div>
+            </div>
+
+            <div class="notification notification--red">
+              <div class="notification__container">
+                <svg class="icon notification__icon">
+                  <use xlink:href="#icon-notification"></use>
+                </svg>
+
+                <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                  messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+              </div>
+            </div>
+
+            <div class="notification notification--black">
+              <div class="notification__container">
+                <svg class="icon notification__icon">
+                  <use xlink:href="#icon-notification"></use>
+                </svg>
+
+                <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                  messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Body -->
+        <div class="cart__body">
+          <div class="cart-content">
+            <div class="cart-item">
+              <div class="cart-item__photo">
+                <img src="pic/components/cart-item/cart-item.png"
+                  srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__left-part">
+                  <div class="cart-item__title">Upon the celtic cross</div>
+
+                  <div class="cart-item__author">Jonathan Bates</div>
+
+                  <ul class="cart-item__attrs">
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                  </ul>
+                </div>
+
+                <div class="cart-item__right-part">
+                  <div class="cart-item__price">&pound;64.95</div>
+
+                  <div class="cart-item__quantity">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+
+                  <button class="cart-item__remove-btn" type="button">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item__photo">
+                <img src="pic/components/cart-item/cart-item.png"
+                  srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__left-part">
+                  <div class="cart-item__title">Upon the celtic cross</div>
+
+                  <div class="cart-item__author">Jonathan Bates</div>
+
+                  <ul class="cart-item__attrs">
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                  </ul>
+                </div>
+
+                <div class="cart-item__right-part">
+                  <div class="cart-item__price">&pound;64.95</div>
+
+                  <div class="cart-item__quantity">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+
+                  <button class="cart-item__remove-btn" type="button">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item__photo">
+                <img src="pic/components/cart-item/cart-item.png"
+                  srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__left-part">
+                  <div class="cart-item__title">Upon the celtic cross</div>
+
+                  <div class="cart-item__author">Jonathan Bates</div>
+
+                  <ul class="cart-item__attrs">
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                  </ul>
+                </div>
+
+                <div class="cart-item__right-part">
+                  <div class="cart-item__price">&pound;64.95</div>
+
+                  <div class="cart-item__quantity">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+
+                  <button class="cart-item__remove-btn" type="button">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item__photo">
+                <img src="pic/components/cart-item/cart-item.png"
+                  srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+              </div>
+
+              <div class="cart-item__content">
+                <div class="cart-item__left-part">
+                  <div class="cart-item__title">Upon the celtic cross</div>
+
+                  <div class="cart-item__author">Jonathan Bates</div>
+
+                  <ul class="cart-item__attrs">
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                    <li>Optional extra attribute</li>
+                  </ul>
+                </div>
+
+                <div class="cart-item__right-part">
+                  <div class="cart-item__price">&pound;64.95</div>
+
+                  <div class="cart-item__quantity">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select>
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+
+                  <button class="cart-item__remove-btn" type="button">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cart-sidebar">
+            <div class="cart-sidebar__container">
+              <table class="cart-sidebar__table">
+                <tbody>
+                  <tr>
+                    <th>Subtotal</th>
+                    <td><span class="currency-sign">&pound;</span> 129.95</td>
+                  </tr>
+
+                  <tr>
+                    <th>Shipping</th>
+                    <td><a class="link" href="#">Add info</a></td>
+                  </tr>
+
+                  <tr>
+                    <th>Variable nr of lines</th>
+                    <td><span class="currency-sign">-&pound;</span> 19.95</td>
+                  </tr>
+
+                  <tr>
+                    <th><strong>Total</strong></th>
+                    <td><strong><span class="currency-sign">&pound;</span> 129.95</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="cart-sidebar__actions">
+                <a class="btn btn--blue cart-sidebar__btn" href="#">Checkout</a>
+
+                <a class="btn btn--blue cart-sidebar__btn" href="#">Option Button</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================
+    FOOTER
+  =========================== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+
+        <!-- Catalogue -->
+        <div class="footer-section">
+          <div class="footer-section__title">Catalogue</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">CD's</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">The Leading Edge</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Wind Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Fanfare Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos/Duets/Trios</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass or Wind Band Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos with Piano Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Eminence Brass Quartet Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">David Childs Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Roger Webster Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Owen Farr Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Books</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- My account -->
+        <div class="footer-section">
+          <div class="footer-section__title">My account</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Account</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Cart</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Checkout</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Register</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Artists -->
+        <div class="footer-section">
+          <div class="footer-section__title">Artists</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Ford</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Wainwright</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Anthony Ritchie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Barry Forgie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Ben Hollings</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">More&hellip;</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Information -->
+        <div class="footer-section">
+          <div class="footer-section__title">Information</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Specials</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Sitemap</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Customer Service</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Download</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-section">
+          <div class="footer-section__title">Legal</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Terms & Conditions</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Privacy Policy</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Built by GK Creative</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <div class="newsletter__title">Newsletter</div>
+
+          <div class="newsletter__desc">
+            <p>Stay up to date on all things Prima Vista Musikk.</p>
+          </div>
+
+          <form class="newsletter__form" action="#" method="post">
+            <input class="newsletter__input" name="email" type="email" placeholder="Enter your email">
+
+            <button class="newsletter__submit-btn" type="submit">
+              <svg class="icon">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="newsletter__notice">
+            <p>By submitting this form, you agree to the Terms of Use and Privacy of this website.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================
+    CART POPUP
+  =========================== -->
+  <div class="cart-popup">
+    <div class="cart-popup__bg"></div>
+
+    <div class="cart-popup__container">
+
+      <!-- Header -->
+      <header class="cart-popup__header">
+        <div class="cart-popup__header-container">
+          <div class="cart-popup__title">5 items</div>
+
+          <button class="cart-popup__close-btn" type="button">Close</button>
+        </div>
+      </header>
+
+      <!-- Body -->
+      <div class="cart-popup__body">
+
+        <!-- Notifications -->
+        <div class="cart-popup__notifications">
+          <div class="notification notification--blue">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+
+          <div class="notification notification--red">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+
+          <div class="notification notification--black">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Items container -->
+        <div class="cart-popup__inner-container">
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="cart-popup__footer">
+        <table class="cart-popup__table">
+          <tbody>
+            <tr>
+              <th>Shipping</th>
+              <td><span class="currency-sign">-&pound;</span> 9.99</td>
+            </tr>
+
+            <tr>
+              <th>Discount</th>
+              <td><span class="currency-sign">-&pound;</span> 19.95</td>
+            </tr>
+
+            <tr>
+              <th>Subtotal</th>
+              <td><span class="currency-sign">&pound;</span> 129.95</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cart-popup__actions">
+          <a class="btn btn--blue cart-popup__checkout-btn" href="#">Checkout</a>
+
+          <a class="cart-popup__cart-link" href="#">Show Full Cart</a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://polyfill.io/v3/polyfill.min.js" crossorigin="anonymous"></script>
+  <script src="js/runtime.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+
+</body>
+</html>

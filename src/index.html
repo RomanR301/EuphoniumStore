@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>EuphoniumStore</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body>
+    <div class="site-container">
+      <!-- ==========================
+    HEADER
+  =========================== -->
+      <header class="header">
+        <div class="container header-container">
+          <div class="header__hamburger-btn" aria-label="Navigation">
+            <button class="burger">
+              <span class="burger__line"></span>
+            </button>
+          </div>
+          <a href="#" class="header__logo">
+            <img
+              src="img/logo.svg"
+              alt="Logo Of EuphoniumStore"
+              class="icon-logo"
+            />
+          </a>
+          <div class="header-search">
+            <input
+              type="search"
+              class="h-search"
+              placeholder="looking for anything special? search here…."
+            />
+            <button class="search-submit">
+              <img src="img/search.svg" alt="Search Icon" />
+            </button>
+          </div>
+          <div class="header-interaction-list">
+            <div class="header-interaction__item call">
+              <button class="header-interaction__btn">
+                <img src="img/call.svg" alt="Call Icon" class="icon-call" />
+              </button>
+              <span>customer service</span>
+            </div>
+            <div class="header-interaction__item search">
+              <button class="search-trigger">
+                <img
+                  src="img/search.svg"
+                  alt="Search Icon"
+                  class="icon-search"
+                />
+              </button>
+            </div>
+            <div class="header-interaction__item">
+              <button class="header__interation-btn">
+                <img src="img/user.svg" alt="User Icon" class="icon-user" />
+              </button>
+              <span>login</span>
+            </div>
+            <div class="header-interaction__item">
+              <button class="header-interaction__btn header__cart-btn">
+                <img src="img/cart.svg" alt="Cart Icon" class="icon-cart" />
+              </button>
+              <span>shopping cart</span>
+            </div>
+          </div>
+        </div>
+        <nav class="container nav">
+          <div class="nav-wrapper">
+            <span class="nav__title">categories</span>
+            <div class="header__hamburger-btn" aria-label="Navigation">
+              <button class="burger burger-nav">
+                <span class="burger__line"></span>
+              </button>
+            </div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">home</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link nav__link--dropdown">cd's</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">downloads</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">sheet music</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">mnozil brass</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">mouthpieces</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">mutes</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">besson parts</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">accessories</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">lefreque</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <img
+                src="img/arrow-dropdown.svg"
+                alt="Arrow Icon"
+                class="arrow-dropdown dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#" class="nav__link">new items</a>
+              <img
+                src="img/arrow-mobile.svg"
+                alt="Arrow Icon"
+                class="arrow-mobile dropdown__trigger"
+              />
+              <div class="dropdown-list">
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+                <a href="#" class="dropdown__item">Item 1</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ==========================
+    MAIN
+  =========================== -->
+      <main class="main">
+        <section class="home-hero">
+          <div class="container home-hero-container">
+            <div class="swiper-container home-hero-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="home-hero-slide__image">
+                    <img src="img/hero-slide1.png" alt="ufo (steven mead)" />
+                  </div>
+                  <div class="home-hero-slide-text">
+                    <div class="home-hero-slide__title">ufo</div>
+                    <div class="home-hero-slide__author">steven mead</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-hero-slide__image">
+                    <img src="img/hero-slide2.png" alt="ufo (steven mead)" />
+                  </div>
+                  <div class="home-hero-slide-text">
+                    <div class="home-hero-slide__title">pulse</div>
+                    <div class="home-hero-slide__author">steven mead</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-hero-slide__image">
+                    <img src="img/hero-slide3.png" alt="ufo (steven mead)" />
+                  </div>
+                  <div class="home-hero-slide-text">
+                    <div class="home-hero-slide__title">hosanna</div>
+                    <div class="home-hero-slide__author">
+                      steven mead (euphonium) & lidia ksiazkiewicz (organ)
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-hero-slide__image">
+                    <img src="img/hero-slide4.png" alt="ufo (steven mead)" />
+                  </div>
+                  <div class="home-hero-slide-text">
+                    <div class="home-hero-slide__title">pearls</div>
+                    <div class="home-hero-slide__author">
+                      steven mead and the central band of the royal air force
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev home-hero-prev"></div>
+              <div class="swiper-button-next home-hero-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="home-products">
+          <div class="container home-products-container">
+            <div class="home-products-content">
+              <h2 class="block__title">music for your ears.</h2>
+              <a href="#" class="home-products__link">start-shopping</a>
+            </div>
+            <div class="swiper-container home-products-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products1.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products1.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products1.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products1.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products1.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-products">
+          <div class="container home-products-container">
+            <div class="home-products-content">
+              <h2 class="block__title">sheet music</h2>
+              <a href="#" class="home-products__link">start-shopping</a>
+            </div>
+            <div class="swiper-container home-products-slider-second">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products2.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products2.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products2.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products2.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="preview-card">
+                    <div class="preview-card__image">
+                      <img src="img/home-products2.png" alt="Product Image" />
+                    </div>
+                    <h3 class="preview-card__title">ave maria</h3>
+                    <p class="preview-card__description">
+                      astor piazzolla arr. luc vertommen euphonium and piano
+                    </p>
+                    <div class="preview-card-price">
+                      <span class="preview-card-price__discount">£18.00</span>
+                      <span class="preview-card-price__count">£18.00</span>
+                    </div>
+                    <button class="preview-card__btn">add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-about">
+          <div class="container home-about-container">
+            <div class="home-about__image">
+              <img src="img/about.png" alt="My Photo" />
+            </div>
+            <div class="home-about-text">
+              <span class="home-about__title"
+                >welcome to the euphonium store</span
+              >
+              <p class="home-about__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur varius, felis a tincidunt molestie, ante orci
+                consequat risus, a vulputate nisi lectus nec eros. Etiam varius
+                suscipit nulla quis eleifend. Donec rutrum, purus a condimentum
+                fringilla, enim mi tristique metus, id varius lectus leo at
+                erat. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Mauris tempor felis
+                varius felis maximus, posuere ullamcorper dolor commodo. Aenean
+                id mauris quis metus rhoncus accumsan a at tortor. Mauris tortor
+                velit, scelerisque in urna a, porttitor convallis massa. Sed sed
+                eros nisl. Nunc vestibulum nunc libero, nec finibus nisl
+                eleifend in. Nunc elit diam. Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos.
+                Mauris tempor felis varius felis maximus, posuere ullamcorper
+                dolor commodo. Aenean id mauris quis metus rhoncus accumsan a at
+                tortor. Mauris tortor velit, scelerisque in urna a, porttitor
+                convallis massa. Sed sed eros nisl. Nunc vestibulum nunc libero,
+                nec finibus nisl eleifend in. Nunc elit diam.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="news">
+          <div class="container news-container">
+            <h2 class="block__title">steve's thoughts</h2>
+            <div class="news-table">
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news1.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">Tech-oil</h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news2.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">
+                    Looking for some exciting studies to play?
+                  </h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news3.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">
+                    We have a special feature on some great melodic/song books
+                    for you
+                  </h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news1.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">Tech-oil</h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news2.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">
+                    Looking for some exciting studies to play?
+                  </h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-wrapper">
+                <div class="news-item">
+                  <div class="news-item__image">
+                    <img src="img/news3.png" alt="News Preview" />
+                  </div>
+                  <h4 class="news-item__title">
+                    We have a special feature on some great melodic/song books
+                    for you
+                  </h4>
+                  <p class="news-item__description">
+                    Tech-Oil, possibly the finest valve oil in the world, just
+                    arrived in the UK. Only 2 drops per valve, then re-apply
+                    after a month! Buy <a href="#">one</a> or
+                    <a href="#">two</a> bottles. ** We now have stock again so
+                    don’t delay ** We’re getting rave reviews!
+                  </p>
+                  <div class="news-item__nav">
+                    <a href="#" class="news-item__link"
+                      >read more
+                      <img src="img/arrow-right.svg" alt="Arrow Icon"
+                    /></a>
+                    <div class="news-item__tags">
+                      <div class="news-item__tag">accessories</div>
+                      <div class="news-item__tag">oil</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container contacts-container">
+            <div class="contacts-text">
+              <div class="contacts__title">newsletter signup</div>
+              <p class="contacts__description">
+                Receive updates on new products, music tips and other news
+                regarding the euphonium store.
+              </p>
+            </div>
+            <div class="contacts__email">
+              <input
+                type="email"
+                class="e-input"
+                placeholder="enter your e-mail address"
+              />
+              <button type="submit" class="contacts__submit">sign up</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ==========================
+    FOOTER
+  =========================== -->
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-list">
+            <span class="footer__title">help & support</span>
+            <a href="#" class="footer__link">contact</a>
+            <a href="#" class="footer__link">returns</a>
+            <a href="#" class="footer__link">shipping information</a>
+            <a href="#" class="footer__link">faq</a>
+          </div>
+          <div class="footer-list">
+            <span class="footer__title">categories</span>
+            <a href="#" class="footer__link">cd's</a>
+            <a href="#" class="footer__link">downloads</a>
+            <a href="#" class="footer__link">sheet music</a>
+            <a href="#" class="footer__link">mnozil brass</a>
+            <a href="#" class="footer__link">mouthpieces</a>
+            <a href="#" class="footer__link">mutes</a>
+          </div>
+          <div class="footer-list">
+            <span class="footer__title">&nbsp;</span>
+            <a href="#" class="footer__link">besson parts</a>
+            <a href="#" class="footer__link">accessories</a>
+            <a href="#" class="footer__link">lefreque</a>
+            <a href="#" class="footer__link">new items</a>
+          </div>
+          <div class="footer-list">
+            <span class="footer__title">connect with steve</span>
+            <a href="#" class="footer__link">
+              <img src="img/facebook.svg" alt="Logo Of Facebook" /> facebook
+            </a>
+            <a href="#" class="footer__link">
+              <img src="img/twitter.svg" alt="Logo Of Twitter" /> twitter
+            </a>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-copyright">
+            <div class="footer-wrapper">
+              <a href="#" class="footer__logo">
+                <img src="img/footer-logo.svg" alt="Logo Of EuphoniumStore" />
+              </a>
+              <div class="footer-copyright-list">
+                <a href="#" class="footer__link">terms & conditions</a>
+                <a href="#" class="footer__link">cookies</a>
+                <a href="#" class="footer__link">privacy</a>
+              </div>
+            </div>
+            <div class="footer-wrapper">
+              <p>© euphoniumstore.net | website design by gkcreative</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/runtime.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendors.min.js"></script>
+  </body>
+</html>

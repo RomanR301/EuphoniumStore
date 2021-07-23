@@ -1,0 +1,119 @@
+
+/*
+================================================================================
+
+  "Products Slider" component
+
+================================================================================
+*/
+
+.products-slider {
+  position: relative;
+
+  &__container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__nav {
+
+    .slider-nav__btn {
+      position: absolute;
+      top: 33.3333%;
+
+      &--prev {
+        left: -5rem;
+      }
+
+      &--next {
+        right: -5rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 1600px
+@include mq($until: mq1600px) {
+  .products-slider {
+
+    &__nav {
+
+      .slider-nav__btn {
+
+        &--prev {
+          left: -3rem;
+        }
+
+        &--next {
+          right: -3rem;
+        }
+      }
+    }
+  }
+}
+
+
+// Until 1024px
+@include mq($until: mq1024px) {
+  .products-slider {
+
+    &__container {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: calc(100% + 4rem);
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+
+// Until 768px
+@include mq($until: mq768px) {
+  .products-slider {
+
+    &__container {
+
+      .product-card {
+        &__btn {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+
+// Until 375px
+@include mq($until: mq375px) {
+  .products-slider {
+
+    &__container {
+
+      .product-card {
+        &__btn {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+
+/*
+================================================================================
+
+  Header
+
+================================================================================
+*/
+.header {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 85px;
+  }
+  &-interaction {
+    &-list {
+      display: flex;
+      align-items: flex-end;
+      .search {
+        display: none;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    margin: 0 20px;
+  }
+}
+
+.h-search {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: $black-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  &::placeholder {
+    color: #CCCCCC;
+  }
+  &::-webkit-search-decoration, 
+  &::-webkit-search-cancel-button, 
+  &::-webkit-search-results-button, 
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.header__hamburger-btn {
+  display: none;
+}
+
+.burger {
+  @include burger;
+}
+
+// Media 1200px //
+@media screen and (max-width: 1200px) {
+  .header {
+    &-container {
+      padding: 15px 85px 20px;
+      border-bottom: 5px solid #7F3589;
+    }
+    .search {
+      display: block;
+    }
+    &-interaction {
+      &__item {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        &:nth-child(1) {
+          display: none;
+        }
+        span {
+          display: none;
+        }
+        .icon {
+          &-cart {
+            width: 33px;
+            height: 30px;
+          }
+          &-user {
+            width: 26px;
+            height: 30px;
+          }
+          &-search {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    &-search {
+      display: none;
+    }
+  }
+  .header__hamburger-btn {
+    display: block;
+    // z-index: 9999;
+  }
+}
+
+// Media 991px //
+@media screen and (max-width: 991px) {
+  .header {
+    &-container {
+      padding: 15px 20px 20px;
+    }
+  }
+}
+
+// Media 600px //
+@media screen and (max-width: 600px) {
+  .header {
+    &__logo {
+      max-width: 110px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

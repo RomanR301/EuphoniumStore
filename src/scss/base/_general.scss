@@ -1,0 +1,104 @@
+
+/*
+================================================================================
+
+  General
+
+================================================================================
+*/
+
+:root {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include font-smoothing;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: $dark-grey-color;
+  font-family: $raleway-font-stack;
+
+  // Dark overlay
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+    background-color: rgba($black-color, 0.25);
+    opacity: 0;
+    transition: $default-transition;
+  }
+
+
+  // Overlay state
+  &.js-overlay {
+    &::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1366px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.block__title {
+  color: $black-color;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+// Media 991px //
+@media screen and (max-width: 991px) {
+  .block__title {
+    font-size: 36px;
+  }
+}
+
+// Media 600px //
+@media screen and (max-width: 600px) {
+  .block__title {
+    font-size: 24px;
+  }
+}

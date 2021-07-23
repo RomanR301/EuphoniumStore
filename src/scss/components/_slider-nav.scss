@@ -1,0 +1,77 @@
+
+/*
+================================================================================
+
+  "Slider Navigation" component
+
+================================================================================
+*/
+
+.slider-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  &--vertical {
+    .slider-nav__btn {
+
+      > .icon {
+        width: 4.2rem;
+        height: 2.3rem;
+      }
+    }
+  }
+
+
+  &__item {
+  }
+
+  &__btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+
+    > .icon {
+      width: 2.3rem;
+      height: 4.2rem;
+      fill: $dark-grey-color;
+      transition: $default-transition;
+    }
+
+
+    // Disabled state
+    &.js-disabled {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 1600px
+@include mq($until: mq1600px) {
+  .slider-nav {
+
+    &__btn {
+
+      > .icon {
+        width: 1.5rem;
+        height: 3.4rem;
+      }
+    }
+  }
+}

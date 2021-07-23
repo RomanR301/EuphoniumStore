@@ -1,0 +1,61 @@
+
+/*
+================================================================================
+
+  "Home Hero" section
+
+================================================================================
+*/
+.home-hero {
+  &-container {
+    position: relative;
+  }
+  &-slide {
+    &__image {
+      max-height: 400px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+    &__title {
+      color: $white-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    &__author {
+      color: $white-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  }
+}
+
+.home-hero-prev,
+.home-hero-next {
+  color: $white-color;
+}
+
+.home-hero-prev {
+  left: 20px;
+}
+
+.home-hero-next {
+  right: 20px;
+}
+
+// Media 768px //
+@media screen and (max-width: 768px) {
+  .home-hero {
+    &-slide__image {
+      max-height: unset;
+    }
+  }
+}

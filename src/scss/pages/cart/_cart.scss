@@ -1,0 +1,227 @@
+
+/*
+================================================================================
+
+  "Cart" page
+
+================================================================================
+*/
+
+.cart {
+  @include no-shrink;
+
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    margin-bottom: 3.4rem;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: (50/40);
+  }
+
+  &__notifications {
+    margin-top: 5rem;
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+
+
+/* Content
+------------------------------------- */
+
+.cart-content {
+  flex-grow: 1;
+  margin-right: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid $light-grey-2-color;
+}
+
+
+
+/* Sidebar
+------------------------------------- */
+
+.cart-sidebar {
+  flex-shrink: 0;
+  width: 40rem;
+
+  &__container {
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      color: $light-grey-2-color;
+      border-top: 1px solid $light-grey-2-color;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: (21/14);
+      text-align: left;
+    }
+
+    td {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      color: $light-grey-2-color;
+      border-top: 1px solid $light-grey-2-color;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: (21/14);
+      text-align: right;
+
+      .currency-sign {
+        font-size: 1.3rem;
+      }
+
+      .link {
+        color: $light-blue-color;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__actions {
+  }
+
+  &__btn {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 1280px
+@include mq($until: mq1280px) {
+  .cart {
+
+    &__header {
+      margin-bottom: 3rem;
+    }
+
+    &__notifications {
+      margin-top: 3rem;
+    }
+  }
+}
+
+
+// Until 1024px
+@include mq($until: mq1024px) {
+  .cart {
+
+    &__header {
+      margin-bottom: 2rem;
+    }
+
+    &__breadcrumbs {
+      display: none;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__notifications {
+      margin-top: 2rem;
+    }
+
+    &__body {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 56rem;
+    }
+  }
+
+  .cart-content {
+    margin-right: 0;
+  }
+
+  .cart-sidebar {
+    width: 100%;
+  }
+}
+
+
+// Until 568px
+@include mq($until: mq568px) {
+  .cart {
+
+    &__title {
+      font-size: 2.6rem;
+    }
+  }
+
+  .cart-sidebar {
+    padding-top: 3rem;
+
+    &__table {
+
+      th {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      td {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    &__actions {
+      margin-top: 1rem;
+    }
+
+    &__btn {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+
+// Until 375px
+@include mq($until: mq375px) {
+  .cart {
+
+    &__title {
+      font-size: 2.4rem;
+    }
+  }
+}

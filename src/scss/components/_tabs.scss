@@ -1,0 +1,117 @@
+
+/*
+================================================================================
+
+  "Tabs" component
+
+================================================================================
+*/
+
+.tabs {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-bottom: 1px solid $light-grey-2-color;
+  list-style-type: none;
+
+  &__item {
+    margin-bottom: -1px;
+    margin-right: 5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    color: $light-grey-2-color;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    outline: 0;
+    font-size: 2.2rem;
+    line-height: normal;
+    transition: $default-transition;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $dark-grey-color;
+    }
+
+
+    // Active state
+    &.js-active {
+      color: $dark-grey-color;
+      border-bottom-color: $dark-grey-color;
+    }
+  }
+}
+
+.tabs-content {
+
+  &__wrapper {
+    display: none;
+
+    // Active state
+    &.js-active {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 568px
+@include mq($until: mq568px) {
+  .tabs {
+
+    &__item {
+      margin-right: 3rem;
+    }
+
+    &__btn {
+      padding-bottom: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+
+// Until 480px
+@include mq($until: mq480px) {
+  .tabs {
+
+    &__item {
+      margin-right: 2.5rem;
+    }
+
+    &__btn {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+// Until 414px
+@include mq($until: mq414px) {
+  .tabs {
+
+    &__btn {
+      font-size: 1.5rem;
+    }
+  }
+}

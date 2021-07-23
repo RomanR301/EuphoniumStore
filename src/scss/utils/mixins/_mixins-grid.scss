@@ -1,0 +1,37 @@
+
+/*
+================================================================================
+
+  Grid mixins
+
+================================================================================
+*/
+
+
+
+/* Container
+------------------------------------ */
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $pad-md;
+  padding-right: $pad-md;
+  max-width: 160rem;
+
+  // Until 1024px
+  @include mq($until: mq1024px) {
+    padding-left: $pad-sm;
+    padding-right: $pad-sm;
+  }
+}
+
+
+
+/* No shrink
+------------------------------------- */
+
+@mixin no-shrink {
+  flex-shrink: 0;
+  width: 100%;
+}

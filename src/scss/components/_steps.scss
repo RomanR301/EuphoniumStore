@@ -1,0 +1,98 @@
+
+/*
+================================================================================
+
+  "Steps" component
+
+================================================================================
+*/
+
+.steps {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-bottom: 1px solid $light-grey-2-color;
+  list-style-type: none;
+
+  &__item {
+    margin-bottom: -1px;
+    margin-right: 5rem;
+    padding-bottom: 1.8rem;
+    color: $light-grey-2-color;
+    font-size: 1.6rem;
+    line-height: normal;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+    &--active {
+      color: $dark-grey-color;
+      border-bottom: 1px solid $dark-grey-color;
+    }
+
+    &--passed {
+      display: inline-flex;
+      align-items: center;
+      color: $green-color;
+      border-bottom: 1px solid $green-color;
+
+      > .icon {
+        margin-right: 1rem;
+        width: 1.4rem;
+        height: 1.2rem;
+        fill: $green-color;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 768px
+@include mq($until: mq768px) {
+  .steps {
+
+    &__item {
+      margin-right: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+
+// Until 480px
+@include mq($until: mq480px) {
+  .steps {
+
+    &__item {
+      margin-right: 2rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+// Until 375px
+@include mq($until: mq375px) {
+  .steps {
+
+    &__item {
+      margin-right: 1.5rem;
+      font-size: 1.3rem;
+
+      > .icon {
+        display: none;
+      }
+    }
+  }
+}

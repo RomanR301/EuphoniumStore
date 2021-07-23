@@ -1,0 +1,32 @@
+
+/*
+================================================================================
+
+  Form mixins
+
+================================================================================
+*/
+
+
+
+/* Placeholder
+------------------------------------ */
+
+@mixin placeholder($color) {
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
+}

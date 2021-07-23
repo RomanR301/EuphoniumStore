@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Product Default | Prima Vista Musikk</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.min.css">
+
+  <!-- SVG Sprites Loading -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open('GET', 'img/sprites.svg', true);
+    ajax.send();
+    ajax.onload = function(e) {
+      var div = document.createElement('div');
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ==========================
+    HEADER
+  =========================== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__inner-container">
+        <a class="header__logo" href="#" aria-label="Home page">
+          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="" draggable="false">
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__container">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">News</a>
+            </li>
+
+            <li class="nav__item nav__item--dropdown">
+              <div class="nav__link nav__link--dropdown">
+                Catalogue
+                <svg class="icon nav__icon">
+                  <use xlink:href="#icon-chevron-down"></use>
+                </svg>
+              </div>
+
+              <div class="nav-dropdown">
+                <div class="nav-dropdown__container">
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">By series</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">CD's</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">The Leading Edge</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Brass Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Wind Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Fanfare Band</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Solos/Duets/Trios</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Brass or Wind Band Accompaniment</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Solos with Piano Accompaniment</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Eminence Brass Quartet Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">David Childs Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Roger Webster Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Owen Farr Solo Series</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Books</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">By artist</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Andrew Ford</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Andrew Wainwright</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Anthony Ritchie</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Barry Forgie</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Ben Hollings</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Benjamin Tubb</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Bert Van Thienen</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Cai Isfryn</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Christian Jenkins</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Christian Overhead</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Dan Price</a>
+                      </li>
+                    </ul>
+
+                    <a class="nav-dropdown__btn" href="#">More artists</a>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">Other</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 1</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 2</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 3</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="nav-dropdown__column">
+                    <div class="nav-dropdown__title">Other 2</div>
+
+                    <ul class="nav-dropdown__list">
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 1</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 2</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 3</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 4</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 5</a>
+                      </li>
+
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link" href="#">Item 6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Artists</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Downloads</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="header__hamburger-btn" type="button" aria-label="Navigation">
+            <svg class="icon">
+              <use xlink:href="#icon-hamburger"></use>
+            </svg>
+          </button>
+
+          <button class="header__search-btn" type="button" aria-label="Search">
+            <svg class="icon">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+
+          <a class="header__profile-btn" href="#" aria-label="Profile">
+            <svg class="icon">
+              <use xlink:href="#icon-profile"></use>
+            </svg>
+          </a>
+
+          <button class="header__cart-btn" type="button" aria-label="Cart">
+            <svg class="icon">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-dropdown">
+        <div class="search-dropdown__container">
+          <form class="search-dropdown__form" action="#" method="post" autocomplete="off">
+            <input class="search-dropdown__input" name="search" type="search" placeholder="What are you looking for…">
+
+            <button class="search-dropdown__clear-btn" type="reset">
+              <svg class="icon">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </form>
+
+          <ul class="search-dropdown__list">
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, sunt?</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+
+            <li class="search-dropdown__item">
+              <a class="search-dropdown__link" href="#">Upon the Celtic Cross</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================
+    MAIN
+  =========================== -->
+  <main class="main">
+
+    <!-- Main -->
+    <section class="product-main">
+
+      <!-- Breadcrumbs -->
+      <div class="product-main__breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Shop</a>
+          </li>
+
+          <li class="breadcrumbs__item">
+            <div class="breadcrumbs__link">Product</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Container -->
+      <div class="product-main__container">
+
+        <!-- Photos -->
+        <section class="product-photos">
+          <div class="product-photos__container">
+
+            <!-- Thumbs slider -->
+            <div class="product-photos-thumbs">
+              <div class="swiper-container product-photos-thumbs__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-photos-thumbs__item">
+                      <div class="product-photos-thumbs__photo"
+                        style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="slider-nav slider-nav--vertical product-photos-thumbs__nav">
+                <li class="slider-nav__item">
+                  <button class="slider-nav__btn slider-nav__btn--prev" type="button">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-up"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="slider-nav__item">
+                  <button class="slider-nav__btn slider-nav__btn--next" type="button">
+                    <svg class="icon">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Main slider -->
+            <div class="product-photos-main">
+              <div class="product-photos-main__container">
+                <div class="swiper-container product-photos-main__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="product-photos-main__item">
+                        <div class="product-photos-main__photo"
+                          style="background-image:url('pic/pages/product/product-photo.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-pagination product-photos-main__pagination"></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Summary -->
+        <aside class="product-summary product-main__summary">
+
+          <!-- Header -->
+          <header class="product-summary__header">
+            <h1 class="product-summary__title">Red product title multiline</h1>
+            <h2 class="product-summary__subtitle">Multiline optional product attribute</h2>
+
+            <div class="product-summary__meta">
+              <div class="product-summary__article">PVM-72</div>
+
+              <div class="product-summary__price">&pound;64.95</div>
+            </div>
+          </header>
+
+          <!-- Body -->
+          <div class="product-summary__body">
+            <div class="product-summary-color">
+              <div class="product-summary-color__title">
+                Color: <span class="value">Red</span>
+              </div>
+
+              <ul class="color-picker">
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-1" name="color" type="radio" checked>
+                  <label class="color-picker__label" for="color-1" style="background-color: #cb1717;"></label>
+                </li>
+
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-2" name="color" type="radio">
+                  <label class="color-picker__label" for="color-2" style="background-color: #4f90d1;"></label>
+                </li>
+
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-3" name="color" type="radio">
+                  <label class="color-picker__label" for="color-3" style="background-color: #176acb;"></label>
+                </li>
+
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-4" name="color" type="radio">
+                  <label class="color-picker__label" for="color-4" style="background-color: #4fd18b;"></label>
+                </li>
+
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-5" name="color" type="radio">
+                  <label class="color-picker__label" for="color-5" style="background-color: #afcb17;"></label>
+                </li>
+
+                <li class="color-picker__item">
+                  <input class="color-picker__input" id="color-6" name="color" type="radio">
+                  <label class="color-picker__label" for="color-6" style="background-color: #4fd159;"></label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-summary__desc">
+              <p>Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin velit quam, ultricies
+                sed elit id, scelerisque viverra justo. Donec lobortis diam at arcu convallis consequat. Phasellus auctor
+                tellus in nunc luctus aliquam.</p>
+            </div>
+
+            <ul class="product-summary-attributes">
+              <li class="product-summary-attributes__item">
+                <div class="field">
+                  <label class="field__label">Attribute</label>
+
+                  <div class="field__select-wrapper">
+                    <svg class="icon field__select-arrow">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select class="field__select">
+                      <option value="1" selected>Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                      <option value="5">Option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+
+              <li class="product-summary-attributes__item">
+                <div class="field">
+                  <label class="field__label">Attribute</label>
+
+                  <div class="field__select-wrapper">
+                    <svg class="icon field__select-arrow">
+                      <use xlink:href="#icon-chevron-down"></use>
+                    </svg>
+
+                    <select class="field__select">
+                      <option value="1" selected>Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                      <option value="5">Option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Footer -->
+          <footer class="product-summary__footer">
+            <button class="btn btn--blue product-summary__add-btn" type="button">Add to Music Stand</button>
+          </footer>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+    <!-- Description -->
+    <section class="product-desc">
+      <div class="product-desc__container">
+        <article class="product-desc__inner-container">
+          <h1 class="product-desc__title">Peace makers</h1>
+
+          <p>Peacemakers was composed for Robert Childs and the Grimethorpe Colliery Band. It received its world
+            premiere on November 17th 2014 at The Sage and concluded their winning ‘Brass in Concert’ program, ‘Lest We
+            Forget’.</p>
+
+          <p>As well as commemorating the centenary of World War I, 2014 also marked the 75th Anniversary of the
+            outbreak of Word War II. Dan Price’s Peacemakers pays tribute to those who fought, and uses two contrasting
+            musical ideas as its basis. The motifs and material for the first theme take inspiration from Morse code
+            patterns, and as the work nears a triumphant close the allied forces of World War II are remembered through
+            the words of British Prime Minister Sir Winston Churchill broadcast on 20th August 1940. This speech can be
+            narrated. Alternatively, a free audio download is available from the downloads section of this site.</p>
+
+          <p>Peacemakers has been recorded by Grimethorpe Colliery Band on their CD ‘Grimethorpe Entertain’ available
+            to buy here.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="product-info">
+      <div class="product-info__container">
+        <div class="product-info__inner-container">
+
+          <!-- Header -->
+          <header class="product-info__header">
+            <h2 class="product-info__title">Product information</h2>
+          </header>
+
+          <!-- Body -->
+          <div class="product-info__body">
+            <div class="product-info__table">
+              <div class="product-info__tr">
+                <div class="product-info__th">Difficulty Level</div>
+                <div class="product-info__td">Intermediate - Difficult</div>
+              </div>
+
+              <div class="product-info__tr">
+                <div class="product-info__th">Arranger</div>
+                <div class="product-info__td">-</div>
+              </div>
+
+              <div class="product-info__tr">
+                <div class="product-info__th">Instrumentation</div>
+                <div class="product-info__td">Brass Band</div>
+              </div>
+
+              <div class="product-info__tr">
+                <div class="product-info__th">Duration</div>
+                <div class="product-info__td">00:06:07</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Related products -->
+    <section class="related">
+      <div class="related__container">
+
+        <!-- Header -->
+        <header class="related__header">
+          <h2 class="related__title">Related products</h2>
+        </header>
+
+        <!-- Body -->
+        <div class="related__body">
+          <div class="products-slider">
+            <div class="swiper-container products-slider__container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <a class="product-card__illustration" href="#">
+                      <span class="product-card__photo" style="background-image:url('pic/components/product-card/product-card.jpg');"></span>
+
+                      <div class="product-card__badge">New</div>
+                    </a>
+
+                    <div class="product-card__content">
+                      <div class="product-card__title">
+                        <a href="#">For the fallen and maybe on a total of 3 lines</a>
+                      </div>
+
+                      <div class="product-card__author">Karl Jenkins</div>
+
+                      <div class="product-card__price">£24.95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="slider-nav products-slider__nav">
+              <li class="slider-nav__item">
+                <button class="slider-nav__btn slider-nav__btn--prev" type="button">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-left"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="slider-nav__item">
+                <button class="slider-nav__btn slider-nav__btn--next" type="button">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================
+    FOOTER
+  =========================== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+
+        <!-- Catalogue -->
+        <div class="footer-section">
+          <div class="footer-section__title">Catalogue</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">CD's</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">The Leading Edge</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Wind Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Fanfare Band</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos/Duets/Trios</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Brass or Wind Band Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Solos with Piano Accompaniment</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Eminence Brass Quartet Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">David Childs Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Roger Webster Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Owen Farr Solo Series</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Books</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- My account -->
+        <div class="footer-section">
+          <div class="footer-section__title">My account</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Account</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">My Cart</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Checkout</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Register</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Artists -->
+        <div class="footer-section">
+          <div class="footer-section__title">Artists</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Ford</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Andrew Wainwright</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Anthony Ritchie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Barry Forgie</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Ben Hollings</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">More&hellip;</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Information -->
+        <div class="footer-section">
+          <div class="footer-section__title">Information</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Specials</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Sitemap</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Customer Service</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Download</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-section">
+          <div class="footer-section__title">Legal</div>
+
+          <ul class="footer-section__list">
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Terms & Conditions</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Privacy Policy</a>
+            </li>
+
+            <li class="footer-section__item">
+              <a class="footer-section__link" href="#">Built by GK Creative</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__column">
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <div class="newsletter__title">Newsletter</div>
+
+          <div class="newsletter__desc">
+            <p>Stay up to date on all things Prima Vista Musikk.</p>
+          </div>
+
+          <form class="newsletter__form" action="#" method="post">
+            <input class="newsletter__input" name="email" type="email" placeholder="Enter your email">
+
+            <button class="newsletter__submit-btn" type="submit">
+              <svg class="icon">
+                <use xlink:href="#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="newsletter__notice">
+            <p>By submitting this form, you agree to the Terms of Use and Privacy of this website.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================
+    CART POPUP
+  =========================== -->
+  <div class="cart-popup">
+    <div class="cart-popup__bg"></div>
+
+    <div class="cart-popup__container">
+
+      <!-- Header -->
+      <header class="cart-popup__header">
+        <div class="cart-popup__header-container">
+          <div class="cart-popup__title">5 items</div>
+
+          <button class="cart-popup__close-btn" type="button">Close</button>
+        </div>
+      </header>
+
+      <!-- Body -->
+      <div class="cart-popup__body">
+
+        <!-- Notifications -->
+        <div class="cart-popup__notifications">
+          <div class="notification notification--blue">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+
+          <div class="notification notification--red">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+
+          <div class="notification notification--black">
+            <div class="notification__container">
+              <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
+                messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Items container -->
+        <div class="cart-popup__inner-container">
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x" alt="">
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">&pound;64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="cart-popup__footer">
+        <table class="cart-popup__table">
+          <tbody>
+            <tr>
+              <th>Shipping</th>
+              <td><span class="currency-sign">-&pound;</span> 9.99</td>
+            </tr>
+
+            <tr>
+              <th>Discount</th>
+              <td><span class="currency-sign">-&pound;</span> 19.95</td>
+            </tr>
+
+            <tr>
+              <th>Subtotal</th>
+              <td><span class="currency-sign">&pound;</span> 129.95</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cart-popup__actions">
+          <a class="btn btn--blue cart-popup__checkout-btn" href="#">Checkout</a>
+
+          <a class="cart-popup__cart-link" href="#">Show Full Cart</a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://polyfill.io/v3/polyfill.min.js" crossorigin="anonymous"></script>
+  <script src="js/runtime.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+
+</body>
+</html>

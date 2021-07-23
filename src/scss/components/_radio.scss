@@ -1,0 +1,73 @@
+
+/*
+================================================================================
+
+  "Radio" component
+
+================================================================================
+*/
+
+.radio {
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:hover {
+      & + .radio__label {
+        &::before {
+          border-color: #e6e6e6;
+        }
+      }
+    }
+
+    &:checked {
+      & + .radio__label {
+        &::before {
+          border-color: $dark-grey-color;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    padding-left: 3rem;
+    color: $grey-color;
+    font-size: 1.6rem;
+    line-height: normal;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -0.1rem;
+      left: 0;
+      width: 2rem;
+      height: 2rem;
+      background-color: $white-color;
+      border: 0.3rem solid $light-grey-color;
+      border-radius: 50%;
+      transition: $default-transition;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.5rem;
+      left: 0.6rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $dark-grey-color;
+      border-radius: 50%;
+      opacity: 0;
+      transition: $default-transition;
+    }
+  }
+}

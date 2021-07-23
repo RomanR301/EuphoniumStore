@@ -1,0 +1,56 @@
+
+/*
+================================================================================
+
+  "Color Picker" component
+
+================================================================================
+*/
+
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  &__item {
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked {
+      & + .color-picker__label {
+        border-color: $black-color;
+      }
+    }
+
+    &:focus {
+      & + .color-picker__label {
+        border-color: $blue-color;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-clip: content-box;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: $default-transition;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $light-grey-2-color;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+
+/*
+================================================================================
+
+  "Notification" component
+
+================================================================================
+*/
+
+.notification {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--blue {
+    background-color: $light-blue-color;
+  }
+
+  &--red {
+    background-color: $red-color;
+  }
+
+  &--black {
+    background-color: $dark-grey-color;
+  }
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 2rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    fill: $white-color;
+  }
+
+  &__msg {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white-color;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: (18/14);
+  }
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// Until 1024px
+@include mq($until: mq1024px) {
+  .notification {
+    margin-bottom: 1rem;
+  }
+}
+
+
+// Until 1024px
+@include mq($until: mq1024px) {
+  .notification {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &__icon {
+      margin-right: 1.5rem;
+    }
+
+    &__msg {
+      font-size: 1.3rem;
+    }
+  }
+}

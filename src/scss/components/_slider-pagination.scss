@@ -1,0 +1,29 @@
+
+/*
+================================================================================
+
+  "Slider Pagination" component
+
+================================================================================
+*/
+
+.slider-pagination {
+  display: flex;
+
+  &__item {
+    margin-right: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $light-grey-2-color;
+    transition: $default-transition;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    // Active state
+    &.js-active {
+      background-color: $dark-grey-color;
+    }
+  }
+}
