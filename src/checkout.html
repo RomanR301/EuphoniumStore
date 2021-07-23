@@ -34,16 +34,261 @@
   <!-- ==========================
     HEADER
   =========================== -->
-  <header class="header header--checkout">
-    <div class="header__container">
-      <div class="header__inner-container">
-        <a class="header__logo" href="#" aria-label="Home page">
-          <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="" draggable="false">
-        </a>
+  <header class="header">
+    <div class="container header-container">
+      <div class="header__hamburger-btn" aria-label="Navigation">
+        <button class="burger">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+      <a href="#" class="header__logo">
+        <img
+          src="img/logo.svg"
+          alt="Logo Of EuphoniumStore"
+          class="icon-logo"
+        />
+      </a>
+      <div class="header-search">
+        <input
+          type="search"
+          class="h-search"
+          placeholder="looking for anything special? search here…."
+        />
+        <button class="search-submit">
+          <img src="img/search.svg" alt="Search Icon" />
+        </button>
+      </div>
+      <div class="header-interaction-list">
+        <div class="header-interaction__item call">
+          <button class="header-interaction__btn">
+            <img src="img/call.svg" alt="Call Icon" class="icon-call" />
+          </button>
+          <span>customer service</span>
+        </div>
+        <div class="header-interaction__item search">
+          <button class="search-trigger">
+            <img
+              src="img/search.svg"
+              alt="Search Icon"
+              class="icon-search"
+            />
+          </button>
+        </div>
+        <div class="header-interaction__item">
+          <button class="header__interation-btn">
+            <img src="img/user.svg" alt="User Icon" class="icon-user" />
+          </button>
+          <span>login</span>
+        </div>
+        <div class="header-interaction__item">
+          <button class="header-interaction__btn header__cart-btn">
+            <img src="img/cart.svg" alt="Cart Icon" class="icon-cart" />
+          </button>
+          <span>shopping cart</span>
+        </div>
       </div>
     </div>
+    <nav class="container nav">
+      <div class="nav-wrapper">
+        <span class="nav__title">categories</span>
+        <div class="header__hamburger-btn" aria-label="Navigation">
+          <button class="burger burger-nav">
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">home</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link nav__link--dropdown">cd's</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">downloads</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">sheet music</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">mnozil brass</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">mouthpieces</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">mutes</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">besson parts</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">accessories</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">lefreque</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <img
+            src="img/arrow-dropdown.svg"
+            alt="Arrow Icon"
+            class="arrow-dropdown dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link">new items</a>
+          <img
+            src="img/arrow-mobile.svg"
+            alt="Arrow Icon"
+            class="arrow-mobile dropdown__trigger"
+          />
+          <div class="dropdown-list">
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+            <a href="#" class="dropdown__item">Item 1</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
   </header>
-
 
   <!-- ==========================
     MAIN
@@ -488,207 +733,54 @@
     FOOTER
   =========================== -->
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__column">
-
-        <!-- Catalogue -->
-        <div class="footer-section">
-          <div class="footer-section__title">Catalogue</div>
-
-          <ul class="footer-section__list">
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">CD's</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">The Leading Edge</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Brass Band</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Wind Band</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Fanfare Band</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Solos/Duets/Trios</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Brass or Wind Band Accompaniment</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Solos with Piano Accompaniment</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Eminence Brass Quartet Series</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">David Childs Solo Series</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Roger Webster Solo Series</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Owen Farr Solo Series</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Books</a>
-            </li>
-          </ul>
-        </div>
-
+    <div class="container footer-container">
+      <div class="footer-list">
+        <span class="footer__title">help & support</span>
+        <a href="#" class="footer__link">contact</a>
+        <a href="#" class="footer__link">returns</a>
+        <a href="#" class="footer__link">shipping information</a>
+        <a href="#" class="footer__link">faq</a>
       </div>
-
-      <div class="footer__column">
-
-        <!-- My account -->
-        <div class="footer-section">
-          <div class="footer-section__title">My account</div>
-
-          <ul class="footer-section__list">
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">My Account</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">My Cart</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Checkout</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Register</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Artists -->
-        <div class="footer-section">
-          <div class="footer-section__title">Artists</div>
-
-          <ul class="footer-section__list">
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Andrew Ford</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Andrew Wainwright</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Anthony Ritchie</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Barry Forgie</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Ben Hollings</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">More&hellip;</a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="footer-list">
+        <span class="footer__title">categories</span>
+        <a href="#" class="footer__link">cd's</a>
+        <a href="#" class="footer__link">downloads</a>
+        <a href="#" class="footer__link">sheet music</a>
+        <a href="#" class="footer__link">mnozil brass</a>
+        <a href="#" class="footer__link">mouthpieces</a>
+        <a href="#" class="footer__link">mutes</a>
       </div>
-
-      <div class="footer__column">
-
-        <!-- Information -->
-        <div class="footer-section">
-          <div class="footer-section__title">Information</div>
-
-          <ul class="footer-section__list">
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Specials</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Sitemap</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Customer Service</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Download</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Legal -->
-        <div class="footer-section">
-          <div class="footer-section__title">Legal</div>
-
-          <ul class="footer-section__list">
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Terms & Conditions</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Privacy Policy</a>
-            </li>
-
-            <li class="footer-section__item">
-              <a class="footer-section__link" href="#">Built by GK Creative</a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="footer-list">
+        <span class="footer__title">&nbsp;</span>
+        <a href="#" class="footer__link">besson parts</a>
+        <a href="#" class="footer__link">accessories</a>
+        <a href="#" class="footer__link">lefreque</a>
+        <a href="#" class="footer__link">new items</a>
       </div>
-
-      <div class="footer__column">
-
-        <!-- Newsletter -->
-        <div class="newsletter">
-          <div class="newsletter__title">Newsletter</div>
-
-          <div class="newsletter__desc">
-            <p>Stay up to date on all things Prima Vista Musikk.</p>
-          </div>
-
-          <form class="newsletter__form" action="#" method="post">
-            <input class="newsletter__input" name="email" type="email" placeholder="Enter your email">
-
-            <button class="newsletter__submit-btn" type="submit">
-              <svg class="icon">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </form>
-
-          <div class="newsletter__notice">
-            <p>By submitting this form, you agree to the Terms of Use and Privacy of this website.</p>
+      <div class="footer-list">
+        <span class="footer__title">connect with steve</span>
+        <a href="#" class="footer__link">
+          <img src="img/facebook.svg" alt="Logo Of Facebook"> facebook
+        </a>
+        <a href="#" class="footer__link">
+          <img src="img/twitter.svg" alt="Logo Of Twitter"> twitter
+        </a>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-copyright">
+        <div class="footer-wrapper">
+          <a href="#" class="footer__logo">
+            <img src="img/footer-logo.svg" alt="Logo Of EuphoniumStore">
+          </a>
+          <div class="footer-copyright-list">
+            <a href="#" class="footer__link">terms & conditions</a>
+            <a href="#" class="footer__link">cookies</a>
+            <a href="#" class="footer__link">privacy</a>
           </div>
         </div>
-
+        <div class="footer-wrapper">
+          <p>© euphoniumstore.net | website design by gkcreative</p>
+        </div>
       </div>
     </div>
   </footer>
