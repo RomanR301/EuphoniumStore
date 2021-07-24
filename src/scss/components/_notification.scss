@@ -29,7 +29,9 @@
   &--black {
     background-color: $dark-grey-color;
   }
-
+  &--purple {
+    background-color: $purple-color;
+  }
 
   &__container {
     display: flex;

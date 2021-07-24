@@ -302,24 +302,14 @@
 
         <!-- Header -->
         <header class="cart__header">
-          <ul class="breadcrumbs cart__breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Home</a>
-            </li>
-
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Shop</a>
-            </li>
-
-            <li class="breadcrumbs__item">
-              <div class="breadcrumbs__link">Cart</div>
-            </li>
-          </ul>
-
+          <div class="breadcrumbs-list">
+            <a href="#" class="breadcrumbs__item">Home</a>
+            <a href="#" class="breadcrumbs__item">Shop</a>
+            <a href="#" class="breadcrumbs__item">Cart</a>
+          </div>
           <h1 class="cart__title">Shopping Cart</h1>
-
           <div class="cart__notifications">
-            <div class="notification notification--blue">
+            <div class="notification notification--purple">
               <div class="notification__container">
                 <svg class="icon notification__icon">
                   <use xlink:href="#icon-notification"></use>
@@ -549,9 +539,9 @@
               </table>
 
               <div class="cart-sidebar__actions">
-                <a class="btn btn--blue cart-sidebar__btn" href="#">Checkout</a>
+                <a class="btn btn--purple cart-sidebar__btn" href="#">Checkout</a>
 
-                <a class="btn btn--blue cart-sidebar__btn" href="#">Option Button</a>
+                <a class="btn btn--purple cart-sidebar__btn" href="#">Option Button</a>
               </div>
             </div>
           </aside>
@@ -618,6 +608,273 @@
       </div>
     </div>
   </footer>
+  <div class="cart-popup">
+    <div class="cart-popup__bg"></div>
+
+    <div class="cart-popup__container">
+      <!-- Header -->
+      <header class="cart-popup__header">
+        <div class="cart-popup__header-container">
+          <div class="cart-popup__title">5 items</div>
+
+          <button class="cart-popup__close-btn" type="button">Close</button>
+        </div>
+      </header>
+
+      <!-- Body -->
+      <div class="cart-popup__body" style="height: 604px">
+        <!-- Notifications -->
+        <div class="cart-popup__notifications">
+          <div class="notification notification--purple">
+            <div class="notification__container">
+              <p class="notification__msg">
+                Optional element. Possibly multiple messages underneath
+                this. If messages are needed. Possibly multiple messages
+                underneath this. If messages are needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="notification notification--red">
+            <div class="notification__container">
+              <p class="notification__msg">
+                Optional element. Possibly multiple messages underneath
+                this. If messages are needed. Possibly multiple messages
+                underneath this. If messages are needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="notification notification--black">
+            <div class="notification__container">
+              <p class="notification__msg">
+                Optional element. Possibly multiple messages underneath
+                this. If messages are needed. Possibly multiple messages
+                underneath this. If messages are needed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Items container -->
+        <div class="cart-popup__inner-container">
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img
+                src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x"
+                alt=""
+              />
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">£64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img
+                src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x"
+                alt=""
+              />
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">£64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img
+                src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x"
+                alt=""
+              />
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">£64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item cart-item--sm">
+            <div class="cart-item__photo">
+              <img
+                src="pic/components/cart-item/cart-item.png"
+                srcset="pic/components/cart-item/cart-item@2x.png 2x"
+                alt=""
+              />
+            </div>
+
+            <div class="cart-item__content">
+              <div class="cart-item__left-part">
+                <div class="cart-item__title">Upon the celtic cross</div>
+
+                <div class="cart-item__author">Jonathan Bates</div>
+
+                <ul class="cart-item__attrs">
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                  <li>Optional extra attribute</li>
+                </ul>
+              </div>
+
+              <div class="cart-item__right-part">
+                <div class="cart-item__price">£64.95</div>
+
+                <div class="cart-item__quantity">
+                  <svg class="icon">
+                    <use xlink:href="#icon-chevron-down"></use>
+                  </svg>
+
+                  <select>
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <button class="cart-item__remove-btn" type="button">
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="cart-popup__footer">
+        <table class="cart-popup__table">
+          <tbody>
+            <tr>
+              <th>Shipping</th>
+              <td><span class="currency-sign">-£</span> 9.99</td>
+            </tr>
+
+            <tr>
+              <th>Discount</th>
+              <td><span class="currency-sign">-£</span> 19.95</td>
+            </tr>
+
+            <tr>
+              <th>Subtotal</th>
+              <td><span class="currency-sign">£</span> 129.95</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cart-popup__actions">
+          <a class="btn btn--purple cart-popup__checkout-btn" href="#"
+            >Checkout</a
+          >
+
+          <a class="cart-popup__cart-link" href="#">Show Full Cart</a>
+        </div>
+      </footer>
+    </div>
+  </div>
 
 
 
@@ -643,7 +900,7 @@
 
         <!-- Notifications -->
         <div class="cart-popup__notifications">
-          <div class="notification notification--blue">
+          <div class="notification notification--purple">
             <div class="notification__container">
               <p class="notification__msg">Optional element. Possibly multiple messages underneath this. If
                 messages are needed. Possibly multiple messages underneath this. If messages are needed.</p>
@@ -855,7 +1112,7 @@
         </table>
 
         <div class="cart-popup__actions">
-          <a class="btn btn--blue cart-popup__checkout-btn" href="#">Checkout</a>
+          <a class="btn btn--purple cart-popup__checkout-btn" href="#">Checkout</a>
 
           <a class="cart-popup__cart-link" href="#">Show Full Cart</a>
         </div>

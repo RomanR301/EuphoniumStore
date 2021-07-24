@@ -219,10 +219,10 @@
 
     &:checked {
       & + .checkout-method__label {
-        background-color: rgba($light-blue-color, 0.2);
+        background-color: rgba($light-purple-color, 0.2);
 
         &::before {
-          border-color: $dark-grey-color;
+          border-color: $purple-color;
         }
 
         &::after {
@@ -276,7 +276,7 @@
       transform: translateY(-50%);
       width: 0.8rem;
       height: 0.8rem;
-      background-color: $dark-grey-color;
+      background-color: $purple-color;
       border-radius: 50%;
       opacity: 0;
       transition: $default-transition;

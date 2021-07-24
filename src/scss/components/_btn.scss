@@ -65,6 +65,19 @@
       }
     }
   }
+  &--purple {
+    color: $white-color;
+    background-image: linear-gradient(to bottom right, $light-purple-color 0%, $purple-color 100%);
+    &::before {
+      background-color: $purple-color;
+    }
+
+    &:active {
+      &::before {
+        background-color: $light-purple-color;
+      }
+    }
+  }
 
   &--grey {
     color: $white-color;

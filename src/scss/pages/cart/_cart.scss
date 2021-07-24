@@ -100,7 +100,7 @@
       }
 
       .link {
-        color: $light-blue-color;
+        color: $purple-color;
         text-decoration: underline;
 
         &:hover {
@@ -109,10 +109,6 @@
       }
     }
   }
-
-  &__actions {
-  }
-
   &__btn {
     display: block;
     margin-bottom: 2rem;

@@ -25,8 +25,8 @@
     &:checked {
       & + .checkbox__label {
         &::before {
-          background-color: $dark-grey-color;
-          border-color: $dark-grey-color;
+          background-color: $purple-color;
+          border-color: $purple-color;
         }
 
         &::after {

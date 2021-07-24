@@ -45,6 +45,7 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
+    transition: all .3s ease-in-out;
     &:not(:last-child) {
       &::after {
         padding: 0;
@@ -55,6 +56,9 @@
     &.active {
       color: #7B7B7B;
       pointer-events: none;
+    }
+    &:hover {
+      color: $purple-color;
     }
   }
 }
