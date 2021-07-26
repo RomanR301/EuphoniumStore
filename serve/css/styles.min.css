@@ -3102,12 +3102,12 @@ button {
   justify-content: space-between;
 }
 
-.arrow-down-white {
+.menu-arrow {
   display: block;
   position: absolute;
   right: -16px;
   top: 6px;
-  background-image: url("../../img/header-dropdown.svg");
+  background-image: url("../img/header-dropdown.svg");
   width: 8px;
   height: 8px;
   background-repeat: no-repeat;
@@ -3403,12 +3403,12 @@ button {
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .header .menu > ul > li > a .arrow-down-white {
+  .header .menu > ul > li > a .menu-arrow {
     top: 50%;
     right: 20px;
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    background-image: url("../../img/arrow-mobile.svg");
+    background-image: url("../img/arrow-mobile.svg");
     -webkit-transform: translate(0, -50%) rotate(0);
     transform: translate(0, -50%) rotate(0);
     width: 8px;
@@ -3523,39 +3523,6 @@ button {
     -webkit-flex: 0 0 100%;
     flex: 0 0 100%;
     padding: 0rem;
-  }
-  .header .menu > ul > li .menu-subs.menu-column > .list-item img.responsive {
-    margin-top: 0;
-  }
-  .header .menu > ul > li .menu-subs.menu-column > .list-item.text-center .title {
-    margin-bottom: 1.25rem;
-  }
-  .header .menu > ul > li .menu-subs.menu-column > .list-item.text-center:last-child .title {
-    margin-bottom: 0rem;
-  }
-  .header .menu > ul > li .menu-subs > ul > li > a {
-    display: block;
-  }
-  .header .menu > ul > li .menu-subs.menu-mega > .list-item > ul {
-    margin-bottom: 1rem;
-  }
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1098;
-    opacity: 0;
-    visibility: hidden;
-    background: rgba(0, 0, 0, 0.55);
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .overlay.active {
-    opacity: 1;
-    visibility: visible;
   }
 }
 
