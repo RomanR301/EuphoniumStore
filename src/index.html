@@ -25,382 +25,376 @@
       <!-- ==========================
     HEADER
   =========================== -->
-      <header class="header">
-        <div class="container header-container">
-          <button type="button" class="menu-mobile-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
+  <header class="header">
+    <div class="container header-container">
+      <button type="button" class="menu-mobile-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#" class="header__logo">
+        <img
+          src="img/logo.svg"
+          alt="Logo Of EuphoniumStore"
+          class="icon-logo"
+        />
+      </a>
+      <div class="header-search">
+        <input
+          type="search"
+          class="h-search"
+          placeholder="looking for anything special? search here…."
+        />
+        <button class="search-submit">
+          <img src="img/search.svg" alt="Search Icon" />
+        </button>
+      </div>
+      <div class="header-interaction-list">
+        <div class="header-interaction__item call">
+          <button class="header-interaction__btn">
+            <img src="img/call.svg" alt="Call Icon" class="icon-call" />
           </button>
-          <a href="#" class="header__logo">
+          <span>customer service</span>
+        </div>
+        <div class="header-interaction__item search">
+          <button class="search-trigger">
             <img
-              src="img/logo.svg"
-              alt="Logo Of EuphoniumStore"
-              class="icon-logo"
+              src="img/search.svg"
+              alt="Search Icon"
+              class="icon-search"
             />
-          </a>
-          <div class="header-search">
-            <input
-              type="search"
-              class="h-search"
-              placeholder="looking for anything special? search here…."
-            />
-            <button class="search-submit">
-              <img src="img/search.svg" alt="Search Icon" />
-            </button>
-          </div>
-          <div class="header-interaction-list">
-            <div class="header-interaction__item call">
-              <button class="header-interaction__btn">
-                <img src="img/call.svg" alt="Call Icon" class="icon-call" />
-              </button>
-              <span>customer service</span>
-            </div>
-            <div class="header-interaction__item search">
-              <button class="search-trigger">
-                <img
-                  src="img/search.svg"
-                  alt="Search Icon"
-                  class="icon-search"
-                />
-              </button>
-            </div>
-            <div class="header-interaction__item">
-              <button class="header__interation-btn">
-                <img src="img/user.svg" alt="User Icon" class="icon-user" />
-              </button>
-              <span>login</span>
-            </div>
-            <div class="header-interaction__item">
-              <button class="header-interaction__btn header__cart-btn">
-                <img src="img/cart.svg" alt="Cart Icon" class="icon-cart" />
-              </button>
-              <span>shopping cart</span>
-            </div>
-          </div>
+          </button>
         </div>
-        <div class="container-fluid">
-          <div class="container">
-            <div class="overlay"></div>
-						<div class="menu">
-              <div class="menu-mobile-header">
-                <button type="button" class="menu-mobile-arrow"></button>
-                <div class="menu-mobile-title">categories</div>
-                <button type="button" class="menu-mobile-close"></button>
+        <div class="header-interaction__item">
+          <button class="header__interation-btn">
+            <img src="img/user.svg" alt="User Icon" class="icon-user" />
+          </button>
+          <span>login</span>
+        </div>
+        <div class="header-interaction__item">
+          <button class="header-interaction__btn header__cart-btn">
+            <img src="img/cart.svg" alt="Cart Icon" class="icon-cart" />
+          </button>
+          <span>shopping cart</span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="menu">
+          <div class="menu-mobile-header">
+            <button type="button" class="menu-mobile-arrow"></button>
+            <div class="menu-mobile-title">categories</div>
+            <button type="button" class="menu-mobile-close"></button>
+          </div>
+          <ul class="menu-section">
+            <li><a href="#">home</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">cd's <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
               </div>
-              <ul class="menu-section">
-                <li><a href="#">home</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">cd's <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">downloads <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">sheet music <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">mnozil brass <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">mutes <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">mutes <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">besson parts <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">accessories <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">lefreque <i class="menu-arrow"></i></a>
-                  <div class="menu-subs menu-mega menu-column">
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
-                    </div>
-                    <div class="list-item list-item-newest">
-                      <h4 class="title"><a href="#">newest cd's</a></h4>
-                      <ul>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                        <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-new items-children">
-                  <a href="#">new items</a>
-                </li>
-              </ul>
-              <button type="button" class="menu-mobile-trigger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>    
-						</div>
-          </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">downloads <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">sheet music <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">mnozil brass <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">mutes <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">mutes <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">besson parts <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">accessories <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">lefreque <i class="menu-arrow"></i></a>
+              <div class="menu-subs menu-mega menu-column">
+                <div class="list-item">
+                  <h4 class="title"><a href="#">steven mead <img src="./img/arrow-mobile.svg" alt="arrow right"> </a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">ufo</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">pulse</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">lyrical virtuoso</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">dreamtimes</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">other cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">love's joy</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">drivet</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">eire time</a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover">cirque</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                  <h4 class="title"><a href="#">all cd's <img src="./img/arrow-mobile.svg" alt="arrow right"></a></h4>
+                </div>
+                <div class="list-item list-item-newest">
+                  <h4 class="title"><a href="#">newest cd's</a></h4>
+                  <ul>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                    <li><a href="#"><img src="./img/cd-cover.png" alt="CD cover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-new items-children">
+              <a href="#">new items</a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
       <!-- ==========================
     MAIN
