@@ -3444,7 +3444,7 @@ button {
   }
   .header .menu .menu-mobile-header .menu-mobile-arrow {
     display: none;
-    background-image: url("../../img/arrow-right.svg");
+    background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 20px;
