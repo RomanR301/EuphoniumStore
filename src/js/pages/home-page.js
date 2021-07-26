@@ -35,6 +35,8 @@ const HomePage = (() => {
 
     new Swiper(sliderElem, {
       slidesPerView: 'auto',
+      loop: true,
+      loopedSlides: 10,
       breakpoints: {
         320: {
           spaceBetween: 20,
@@ -51,6 +53,8 @@ const HomePage = (() => {
 
     new Swiper(sliderElem, {
       slidesPerView: 'auto',
+      loop: true,
+      loopedSlides: 10,
       breakpoints: {
         320: {
           spaceBetween: 20,

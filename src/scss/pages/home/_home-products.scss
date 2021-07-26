@@ -7,7 +7,16 @@
 */
 .home-products {
   .swiper-slide {
-    width: 28%;
+    width: 14%;
+    @media (max-width: 1800px) {
+      width: 20%;
+    }
+    @media (max-width: 1600px) {
+      width: 25%;
+    }
+    @media (max-width: 1400px) {
+      width: 27%;
+    }
   }
   .swiper-container {
     width: 100%;
