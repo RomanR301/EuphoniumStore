@@ -300,19 +300,25 @@
   &-dropdown {
     border-top: 1px solid #888888;
     &.js-open {
+      .category-dropdown__trigger img {
+        transform: rotate(0);
+      }
       .category-dropdown-list {
         display: flex;
       }
     }
     &__trigger {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
       color: $black-color;
       font-size: 14px;
       font-weight: 400;
       cursor: pointer;
       padding: 24px 0;
+      img {
+        transform: rotate(90deg);
+      }
     }
     &-list {
       margin-bottom: 24px;
@@ -446,6 +452,19 @@
       overflow: auto;
       left: -150vw;
       transition: all .3s ease-in-out;
+      .burger__line {
+        display: none;
+      }
+      .burger:before {
+        bottom: unset;
+        transform: rotate(45deg);
+        top: 50%;
+      }
+      .burger:after {
+        bottom: unset;
+        top: 50%;
+        transform: rotate(135deg);
+      }
       &.js-open {
         left: 0;
       }
